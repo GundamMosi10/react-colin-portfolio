@@ -3,6 +3,7 @@ import LogoS from '../../assets/images/logo-s.png';
 import LogoSubtitle from '../../assets/images/logo_sub.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 import './index.scss';
 
@@ -23,6 +24,23 @@ const Sidebar = () => (
                 <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
             </NavLink>
         </nav>
+        <ul>
+            <li>
+                <a target="_blank" rel='noreferrer' href='https://www.linkedin.com/in/colin-cargile-71b289166'>
+                    <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+                </a>
+            </li>
+            <li>
+                <a target="_blank" rel='noreferrer' href='https://github.com/GundamMosi10'>
+                    <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+                </a>
+            </li>
+            <li>
+                <a target="_blank" rel='noreferrer' href='https://www.instagram.com/colinmosi/'>
+                    <FontAwesomeIcon icon={faInstagram} color="#4d4d4e" />
+                </a>
+            </li>
+        </ul>
     </div>
 )
 export default Sidebar;
