@@ -1,13 +1,19 @@
 import { Link } from 'react-router-dom';
-import LogoTitle from '../../assets/images/logo-s.png';
+import LogoTitle from '../../assets/images/c-letter-logo-F77FFE28B8-seeklogo.com.png';
 import AnimatedLetters from '../AnimatedLetters';
-import { useState } from 'react'; 
+import { useEffect, useState } from 'react'; 
 import './index.scss'; 
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
-    const nameArray = ['l', 'o', 'b', 'o', 'd', 'a', 'n']
-    const jobArray = ['w', 'e', 'b', ' ', 'd', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r', '.']
+    const nameArray = ['o', 'l', 'i', 'n']
+    const jobArray = ['w', 'e', 'b', ' ', 'd', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r']
+
+    // useEffect(() => {
+    //     return setTimeout(() => {
+    //         setLetterClass('text-animate-hover') 
+    //     }, 4000)
+    // }, [])
 
     return (
         <div className="container home-page">
@@ -23,7 +29,7 @@ const Home = () => {
                 <br /> 
                 <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={22} />
                 </h1>
-                <h2>Front Developer</h2>
+                <h2>Front-End Developer</h2>
                 <Link to="/contact" className='flat-button'>CONTACT ME</Link>
             </div>
         </div>
