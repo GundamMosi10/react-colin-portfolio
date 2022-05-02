@@ -1,6 +1,6 @@
 import { Link, NavLink } from 'react-router-dom';
 import LogoS from '../../assets/images/c-letter-logo-F77FFE28B8-seeklogo.com.png';
-import LogoSubtitle from '../../assets/images/logo_sub.png';
+// import LogoSubtitle from '../../assets/images/logo_sub.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';

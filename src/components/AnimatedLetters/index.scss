@@ -6,16 +6,16 @@
     min-width: 10px;
 }
 
-.tex-animate-hover {
+.text-animate-hover {
     min-width: 10px; 
     display: inline-block;
     animation-fill-mode: both; 
 
-    &hover {
+    &:hover {
         animation: rubberBand 1s; 
         color: #ffd700; 
     }
-  }
+}
 
 @for $i from 1 through 35 {
     .text-animate._#{$i} {
