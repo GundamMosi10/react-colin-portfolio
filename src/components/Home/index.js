@@ -3,6 +3,7 @@ import LogoTitle from '../../assets/images/c-letter-logo-F77FFE28B8-seeklogo.com
 import AnimatedLetters from '../AnimatedLetters';
 import Logo from './Logo'; //do I need this? //
 import { useEffect, useState } from 'react'; 
+import Loader from 'react-loaders';
 import './index.scss'; 
 
 const Home = () => {
@@ -17,7 +18,8 @@ const Home = () => {
     // }, [])
 
     return (
-        <div className="container home-page">
+        <>
+            <div className="container home-page">
             <div className="text-zone">
                 <h1>
                 <span className={letterClass}>H</span>
@@ -34,7 +36,9 @@ const Home = () => {
                 <Link to="/contact" className='flat-button'>CONTACT ME</Link>
             </div>
             <Logo /> 
-        </div>
+            </div>
+            <Loader type="pacman" />
+        </>
     );
 }
 
